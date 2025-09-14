@@ -1,0 +1,19 @@
+{
+  "name": "callbus-monorepo",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "prepare": "husky",
+    "format": "prettier -w .",
+    "format:check": "prettier -c .",
+    "lint": "pnpm -r run lint",
+    "dev": "pnpm -r --parallel run dev"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.3.0"
+  }
+}
